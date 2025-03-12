@@ -1,0 +1,136 @@
+/* Общий стиль страницы */
+body {
+  background-color: #f4f4f4;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  flex-direction: column;
+}
+
+/* Контейнер для игры */
+.game-container {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Панель с выбором режима игры */
+.side-panel {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.game-mode {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.mode-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.mode-button.active {
+  background-color: #0056b3;
+}
+
+.mode-button:hover {
+  background-color: #0056b3;
+}
+
+/* Главный контейнер игры */
+.game {
+  text-align: center;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+/* Кнопки поля */
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.cell {
+  width: 80px;
+  height: 80px;
+  font-size: 2rem;
+  font-weight: bold;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  background-color: #f7f7f7;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cell:hover {
+  background-color: #e4e4e4;
+}
+
+.cell-x {
+  color: #ff6347;
+}
+
+.cell-o {
+  color: #32cd32;
+}
+
+.cell:disabled {
+  cursor: not-allowed;
+  background-color: #e0e0e0;
+}
+
+/* Статус игры и кнопка сброса */
+.status-reset {
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  padding: 10px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.status-reset h2 {
+  margin: 0;
+}
+
+/* Кнопка сброса */
+.reset {
+  margin-top: 20px;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.reset:hover {
+  background-color: #0056b3;
+}
