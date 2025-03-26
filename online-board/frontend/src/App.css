@@ -56,7 +56,6 @@ canvas {
   background: #e64a1e;
 }
 
-/* Стили для всплывающего уведомления */
 .notification {
   position: fixed;
   top: -60px;
