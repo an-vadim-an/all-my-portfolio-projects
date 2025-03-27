@@ -1,0 +1,43 @@
+body {
+    text-align: center;
+    background-color: #1a1a1a;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+canvas {
+    display: block;
+    margin: 20px auto;
+    border: 2px solid white;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff652f;
+}
+
+#timer {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+img {
+    width: 200px;
+    height: auto;
+    margin-bottom: -30px;
+}
