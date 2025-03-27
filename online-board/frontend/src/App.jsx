@@ -92,12 +92,12 @@ const Canvas = () => {
       <canvas ref={canvasRef} onMouseDown={startDrawing} onMouseMove={draw} onMouseUp={stopDrawing} onMouseOut={stopDrawing} />
       <div className="controls">
         <input type="color" value={color} onChange={(e) => setColor(e.target.value)} className="color-picker" />
-        <button onClick={requestClear} className="clear-btn">Очистить</button>
+        <button onClick={requestClear} className="clear-btn">Clear</button>
       </div>
 
       {showNotification && (
         <div className={`notification ${showNotification ? "show" : ""}`}>
-          ⚠ {clearVotes} / {usersCount} хотят очистить холст!
+          ⚠ {clearVotes} / {usersCount} want to clear the canvas!
         </div>
       )}
 
