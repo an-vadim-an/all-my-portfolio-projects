@@ -387,10 +387,39 @@ body {
     font-weight: 500;
     cursor: pointer;
     color: #919090;
+    position: relative;
+    padding-bottom: 5px;
 }
 
-.all-furniture ul li:hover {
+.all-furniture ul li:hover,
+.all-furniture ul li.active {
     color: #1A3D36;
+}
+
+.all-furniture ul li.active::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #1A3D36;
+}
+
+.all-furniture ul li::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background-color: #1A3D36;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.all-furniture ul li:hover::before {
+    width: 100%;
+    left: 0;
 }
 
 .roster {
@@ -431,11 +460,21 @@ body {
     justify-content: center;
 }
 
+.roster-list button:hover {
+    background-color: #1A3D36;
+    transition: background-color 0.3s ease;
+}
+
 .roster-list button p {
     font-size: 15px;
     font-weight: 500;
     color: #808080;
     margin-top: 10px;
+}
+
+.roster-list button:hover p {
+    color: white;
+    transition: color 0.3s ease;
 }
 
 .customers-importan {
@@ -542,6 +581,10 @@ body {
     font-size: 16px;
     font-weight: 400;
     color: #242424;
+}
+
+.reviewer p i {
+    color: #f1cd00;
 }
 
 .subscribe-latest-news {
