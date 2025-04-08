@@ -111,3 +111,4 @@ document.querySelectorAll('#register-btn').forEach(button => {
         }
     });
 });
+

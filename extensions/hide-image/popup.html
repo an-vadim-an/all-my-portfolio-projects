@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Настройки</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Настройки</h2>
+
+    <label class="switch">
+        <input type="checkbox" id="toggleHideImages">
+        <span class="slider"></span>
+    </label>
+    <span>Скрывать изображения</span>
+
+
+    <h3>Белый список</h3>
+    <input type="text" id="whitelistInput" placeholder="Введите ссылку на сайт и нажмите Enter">
+    <ul id="whitelist"></ul>
+
+
+    <script src="popup.js"></script>
+</body>
+</html>

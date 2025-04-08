@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "Hide Images",
+    "version": "1.0",
+    "description": "Скрытие изображений на сайтах",
+    "permissions": ["storage", "scripting", "activeTab"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "host_permissions": ["<all_urls>"],
+    "action": {
+      "default_title": "Скрытие изображений на сайтах",
+      "default_popup": "popup.html"
+    }
+  }
