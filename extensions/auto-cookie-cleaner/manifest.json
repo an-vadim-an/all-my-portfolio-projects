@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Cookie Cleaner",
+  "description": "Автоматическое удаление куки-файлов при закрытии вкладки",
+  "version": "1.0",
+  "permissions": [
+    "cookies",
+    "tabs",
+    "storage",
+    "sessions",
+    "activeTab"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "options_page": "popup.html"
+}

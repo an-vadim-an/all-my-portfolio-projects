@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Настройки расширения</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <h1>Cookie Cleaner</h1>
+  
+  <h2>Выберите режим</h2>
+  <form id="settings-form">
+    <label>
+      <input type="radio" name="mode" value="off">
+      <span>🔕 Не очищать куки</span>
+    </label>
+    <label>
+      <input type="radio" name="mode" value="closed">
+      <span>🗑️ Очищать куки при закрытии вкладки</span>
+    </label>
+    <label>
+      <input type="radio" name="mode" value="all">
+      <span>🌍 Очищать все куки при закрытии вкладки</span>
+    </label>
+  </form>
+
+  <div>
+    <h2>Исключения</h2>
+    <textarea id="exclude" rows="3" placeholder="example.com\nanother-site.org"></textarea>
+    <button id="save-exclude">💾 Сохранить исключения</button>
+  </div>
+
+  <p>Удалено куки-файлов: <span id="counter">0</span></p>
+  <p id="status"></p>
+
+  <script src="popup.js"></script>
+</body>
+</html>
